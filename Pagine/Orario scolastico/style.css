@@ -61,16 +61,3 @@ a{
 a:hover{
     color:rgb(189, 0, 0);
 }
-
-.returnHome{
-    margin: 20px;
-    border-radius: 14px;
-    height: 30px;
-    width: auto;
-    text-align: center;
-    background-color: lightgreen;
-    border-style: solid;
-    border-color: forestgreen;
-    text-decoration: none;
-    color:darkgreen
-}

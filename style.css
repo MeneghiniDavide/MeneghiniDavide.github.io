@@ -1,0 +1,108 @@
+body { 
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: rgb(170, 215, 184);
+    justify-content:center;
+    width: 100%;
+    display:flex;
+
+    background-image: url('Images/wallpaper.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header{
+    width:100%;
+    padding-left: 4%;
+    padding-top: 15px;
+
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.contenitorePrincipale{
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 200px;
+    padding:20px;
+    width: 46%;
+    background-color: rgb(170, 215, 184);
+    border-style:solid;
+    border-width: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
+}
+
+.contenitoreEsercizi{
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    padding:20px;
+    width:auto;
+    background-color: rgb(255, 246, 227);
+    border-style:solid;
+    border-width: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-around;
+}
+
+.contenitoreEsercizio{
+    width:220px;
+    height: 150px;
+    background-color: rgb(247, 194, 54);
+    border-style:solid;
+    border-width: 2px;
+    box-shadow: 5px 5px 0px black;
+}
+
+.linea {
+    border: none;
+    height: 2px;
+    background-color: black;
+    margin-top:5px;
+}
+
+.titoloEsercizio{
+    margin-left:20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.contenutoEsercizio{
+    margin-left:20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    font-weight: 600;
+}
+
+button{
+    border-style:solid;
+    border-width: 2px;
+    margin-left:20px;
+    margin-top: 0px;
+    width: 70px;
+    height: 50px;
+    background-color: rgb(244, 214, 117);
+    box-shadow: 2px 2px 0px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+}
+
+button:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px 0px;
+}
+
+

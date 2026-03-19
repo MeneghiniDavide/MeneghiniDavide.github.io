@@ -3,17 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Il Mio Sito Web</title>
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; }
-    nav a { display: block; margin: 10px 0; font-size: 1.1em; }
-  </style>
+  <title>Homework website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Benvenuto nel mio sito</h1>
-  <nav>
-    <a href="pagine/Orario scolastico/Index.html">Esercizio 1: Orario scolastico</a>
-    <a href="pagine/Il mondo degli animali/Index.html">Esercizio 2: Il mondo degli animali</a>
-  </nav>
+  <div class="contenitorePrincipale">
+    <header>
+      <img src="Images/notepad.png" alt="notepad" width="40" height="40">
+      <h1>Homework website</h1>
+    </header>
+    <div class="contenitoreEsercizi">
+      <div class="contenitoreEsercizio">
+        <h4 class="titoloEsercizio">Esercizio 1</h4>
+        <hr class="linea">
+        <h5 class="contenutoEsercizio">Orario scolastico</h5>
+        <a href="pagine/Orario scolastico/Index.html"><button>Visita</button></a>
+      </div>
+      <div class="contenitoreEsercizio">
+        <h4 class="titoloEsercizio">Esercizio 2</h4>
+        <hr class="linea">
+        <h5 class="contenutoEsercizio">Il mondo degli animali</h5>
+        <a href="pagine/Il mondo degli animali/Index.html"><button>Visita</button></a>
+      </div>
+      <div class="contenitoreEsercizio">
+        <h4 class="titoloEsercizio">Esercizio 3</h4>
+        <hr class="linea">
+        <h5 class="contenutoEsercizio">Mantova</h5>
+        <a href="pagine/Mantova/Index.html"><button>Visita</button></a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
