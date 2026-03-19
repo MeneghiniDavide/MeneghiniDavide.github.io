@@ -29,6 +29,7 @@ header{
     margin-bottom: 200px;
     padding:20px;
     width: 46%;
+    min-width: 360px;
     background-color: rgb(170, 215, 184);
     border-style:solid;
     border-width: 2px;
@@ -45,6 +46,7 @@ header{
     margin-bottom: 50px;
     padding:20px;
     width:auto;
+    min-width: 260px;
     background-color: rgb(255, 246, 227);
     border-style:solid;
     border-width: 2px;
