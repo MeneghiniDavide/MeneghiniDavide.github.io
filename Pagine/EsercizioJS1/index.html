@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Esempi di funzioni JavaScript</title>
+
+    <script>
+        function saluta() {
+            console.log("hai cliccato il bottone");
+        }
+        /*
+            Uso window.onload per fare in modo che quello che c'è al suo interno venga 
+            eseguito dopo il caricamento del DOM altrimenti darebbe errore.
+        */
+        window.onload = function(){
+            let bottone = document.getElementById("CambiaTesto2");
+            bottone.addEventListener("click", saluta);
+        }
+        // Funzione che cambia il testo
+        function cambiaTesto() {
+            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        }
+
+        // Funzione che accende la lampadina
+        function accendiLuce() {
+            document.getElementById("myImage").src = "/Pagine/EsercizioJS1/images/lampadinaAccesa.png";
+            document.body.style.backgroundColor = "rgb(255, 246, 227)";
+        }
+
+        // Funzione che spegne la lampadina
+        function spegniLuce() {
+            document.getElementById("myImage").src = "/Pagine/EsercizioJS1/images/lampadinaSpenta.png";
+            document.body.style.backgroundColor = "rgb(70, 70, 70)";
+        }
+
+    </script>
+
+    <style>
+        body {
+            background-color: rgb(70, 70, 70);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h2>What Can JavaScript Do?</h2>
+
+    <p id="demo">JavaScript can change HTML content.</p>
+
+    <button type="button" onclick="cambiaTesto()">Cambia testo</button>
+
+    <button type="button" id="CambiaTesto2">Cambia testo 2</button>
+
+    <h2>What Can JavaScript Do?</h2>
+
+    <p>JavaScript can change HTML attribute values.</p>
+
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+    <button type="button" onclick="accendiLuce()">Accendi lampadina</button>
+
+    <img id="myImage" src="/Pagine/EsercizioJS1/images/lampadinaSpenta.png" style="width:100px">
+
+    <button type="button" onclick="spegniLuce()">Spegni lampadina</button>
+
+
+
+
+
+
+
+
+    
+
+</body>
+
+</html>
