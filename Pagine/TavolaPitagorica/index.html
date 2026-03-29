@@ -4,10 +4,63 @@
     <title>Tavola Pitagorica</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+        .navbar {
+            font-family: 'IBM Plex Mono', monospace;
+            background-color: rgb(195, 56, 64);
+            background-color: rgb(103, 148, 153);
+            position:fixed;
+            top: 0;
+            width: 100%;
+            height: auto;
+            left: 0;
+            z-index: 1000;
+            margin-bottom: 0px;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            margin-left: 33%;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar li {
+            float: left;
+        }
+
+        .navbar li a {
+            display: block;
+            color: rgb(50, 50, 50);
+            text-align: center;
+            padding: 0 20px;
+            line-height: 60px;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover {
+            background-color: rgb(195, 56, 64);
+            background-color: rgb(103, 148, 153);
+            color: rgb(100, 100, 100);
+        }
+    </style>
 <body>
-    <h1>Tavola Pitagorica 10x10</h1>
+    <nav class="navbar">
+                <ul>
+                    <li><a href="/index.html" class="nav-link">Home</a></li>
+                    <li><a href="/PagineHome/ChiSono.html" class="nav-link">Chi sono</a></li>
+                    <li><a href="/PagineHome/Competenze.html" class="nav-link">Competenze</a></li>
+                    <li><a href="/PagineHome/Progetti.html" class="nav-link">Progetti</a></li>
+                    <li><a href="/PagineHome/Contatti.html" class="nav-link">Contatti</a></li>
+                    <li><a href="/PagineHome/Faq.html" class="nav-link">FAQ</a></li>
+                </ul>
+            </nav>
+
+    <h1 id="titolo">Tavola Pitagorica 10x10</h1>
     <div id="tavola-container"></div>
-    
+
     <script src="tavola-pitagorica.js"></script>
+
 </body>
 </html>
