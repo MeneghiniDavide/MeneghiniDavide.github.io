@@ -1,49 +1,288 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-  <link rel="icon" type="image/png" href="/Images/icon.png">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <link rel="icon" type="image/png" href="/Images/icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>  
+    <header>
+      <nav class="navbar">
+        <ul>
+            <li><a href="#Home" class="nav-link">Home</a></li>
+            <li><a href="#ChiSono" class="nav-link">Chi sono</a></li>
+            <li><a href="#Competenze" class="nav-link">Competenze</a></li>
+            <li><a href="#Progetti" class="nav-link">Progetti</a></li>
+            <li><a href="#Contatti" class="nav-link">Contatti</a></li>
+            <li><a href="#FAQ" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <nav class="navbar">
-    <ul>
-        <li><a href="/index.html" class="nav-link">Home</a></li>
-        <li><a href="/PagineHome/ChiSono.html" class="nav-link">Chi sono</a></li>
-        <li><a href="/PagineHome/Competenze.html" class="nav-link">Competenze</a></li>
-        <li><a href="/PagineHome/Progetti.html" class="nav-link">Progetti</a></li>
-        <li><a href="/PagineHome/Contatti.html" class="nav-link">Contatti</a></li>
-        <li><a href="/PagineHome/Faq.html" class="nav-link">FAQ</a></li>
-    </ul>
-  </nav>
+    <main>
+      <a name="Home">
+        <div class="contenitoreScritte">
+          <img class="immagineHome" src="/Images/scrittaPortfolio.png" alt="sfondo" width="60%">
+          <img class="immagineHome" src="/Images/scrittaNome.png" alt="sfondo" width="40%">
+        </div>
+      </a>
+      
+      <a name="ChiSono">
+        <div class="titoloPagina">
+          <img src="/Images/user.png" alt="notepad" width="40" height="40">
+          <h1>Chi sono</h1>
+        </div>
 
-  <div class="slider-container">
-    <div class="slider-wrapper">
-      <img src="/Images/sfondoHome1.jpg" alt="Prima Immagine">
-      <img src="/Images/sfondoHome2.jpg" alt="Seconda Immagine">
-      <img src="/Images/sfondoHome3.png" alt="Seconda Immagine">
-    </div>
-  </div>
+        <div class="contenutoPagina">
+            <p>Profilo Studente: Davide Meneghini</p>
+            <p>Attualmente iscritto al quarto anno di Informatica presso l'istituto Jean Monnet, ho focalizzato il mio percorso di studi sull'approfondimento di programmazione HTML, CSS e JavaScript.</p>
+            <p>Durante il mio percorso accademico ho sviluppato una spiccata capacità di analisi e di programmazione, creando questo portfolio per raccogliere i miei traguardi principali e testimoniare il mio impegno nel coniugare il rigore teorico con l'applicazione pratica.</p>
+            <blockquote>
+            <p>"Non aver paura dei computer. Abbi paura della loro mancanza."</p>
+            <p>— Isaac Asimov.</p>
+            </blockquote>
+            <p>Contatti: <a href="#Contatti" class="link">Clicca qui</a></p>
+        </div>
+      </a>
 
-  <div class="contenitoreScritte">
-    <img class="immagineHome" src="/Images/scrittaPortfolio.png" alt="sfondo" width="70%">
-    <img class="immagineHome" src="/Images/scrittaNome.png" alt="sfondo" width="50%">
-  </div>
+      <a name="Competenze">
+        <div class="titoloPagina">
+          <img src="/Images/brain.png" alt="notepad" width="50" height="50">
+          <h1>Competenze</h1>
+        </div>
 
-  
+        <div class="contenutoPagina">
+          <section>
+            <ul class="lista-competenze">
+                <li><h3 class="sottotitolo">HTML</h3>semantica e accessibilità</li>
+                <li><h3 class="sottotitolo">CSS</h3>cascade, box model, selettori</li>
+                <li><h3 class="sottotitolo">JavaScript</h3>basi in corso di apprendimento</li>
+                <li><h3 class="sottotitolo">Git</h3>versionamento e GitHub</li>
+                <li><h3 class="sottotitolo">VS Code</h3>editor e estensioni</li>
+                <li><h3 class="sottotitolo">C++</h3>programmazione a oggetti e librerie esterne</li>
+                <li><h3 class="sottotitolo">Java</h3>programmazione a oggetti, javaSwing e thread con sincronizzazione</li>
+                <li><h3 class="sottotitolo">Python</h3>programmazione base</li>
+            </ul>
+          </section>
+        </div>
+      </a>
 
-  <footer class="footer-principale">
-    <p>&copy; 2026 Davide Meneghini — Portfolio</p>
-    <p>Tutti i diritti sono riservati - Riproduzione vietata</p>
-  </footer>
+      <a name="Progetti">
+        <div class="titoloPagina">
+          <img src="/Images/code.png" alt="notepad" width="50" height="50">
+          <h1>Progetti</h1>
+          <div class="search-container">
+            <input type="text" class="search-input" placeholder="Cerca un progetto...">
+          </div>
+        </div>
 
-</body>
+        <div class="contenitoreEsercizi">
+          <div class="contenitoreEsercizio">
+            <h4 class="titoloEsercizio">Orario scolastico</h4>
+            <hr class="linea">
+            <div class="dropdown">
+              <button class="btn pulse">Descrizione</button>
+                <div class="dropdown-content">
+                  <p>Piccolo programma HTML + CSS con la tabella dell'orario scolastico della classe 4^ C INFO e i collegamenti alle pagine HTML dei professori.</p>
+                </div>
+            </div>
+            <a href="Pagine/OrarioScolastico/OrarioScolastico.html"><button>Visita</button></a>
+          </div>
+
+          <div class="contenitoreEsercizio">
+            <h4 class="titoloEsercizio">Il mondo degli animali</h4>
+            <hr class="linea">
+            <div class="dropdown">
+              <button class="btn pulse">Descrizione</button>
+                <div class="dropdown-content">
+                  <p>Pagina HTML + CSS riprodotta dalla comsegna del compito contenente un sito riguardante la fauna del mondo.</p>
+                </div>
+            </div>
+            <a href="Pagine/IlMondoDegliAnimali/IlMondoDegliAnimali.html"><button>Visita</button></a>
+          </div>
+
+          <div class="contenitoreEsercizio">
+            <h4 class="titoloEsercizio">Mantova</h4>
+            <hr class="linea">
+            <div class="dropdown">
+              <button class="btn pulse">Descrizione</button>
+                <div class="dropdown-content">
+                  <p>Pagina HTML + CSS riprodotta dalla comsegna del compito e modificato esteticamente secondo indicazioni della consegna con un file CSS</p>
+                </div>
+            </div>
+            <a href="Pagine/Mantova/Mantova.html"><button>Visita</button></a>
+          </div>
+
+          <div class="contenitoreEsercizio">
+            <h4 class="titoloEsercizio">Tavola pitagorica</h4>
+            <hr class="linea">
+            <div class="dropdown">
+              <button class="btn pulse">Descrizione</button>
+                <div class="dropdown-content">
+                  <p>Pagina HTML + CSS + JS contenente una tavola pitagorica generata con funzioni JavaScript. La tavola pitagorica è 10x10 e all'interno di essa, le caselle pari vengono colorate di rosso.</p>
+                </div>
+            </div>
+            <a href="Pagine/TavolaPitagorica/index.html"><button>Visita</button></a>
+          </div>
+
+          <div class="contenitoreEsercizio">
+            <h4 class="titoloEsercizio">Lampadina accesa/spenta</h4>
+            <hr class="linea">
+            <div class="dropdown">
+              <button class="btn pulse">Descrizione</button>
+                <div class="dropdown-content">
+                  <p>Pagina HTML + CSS +JS contenente una stringa che tramite un pulsante cambia testo e una lampadina chre tramite due pultanti può essere accesa o spenta cambiando anche il colore dello sfondo. Inoltre è presente un pulsante che scrive un testo nella console del sito.</p>
+                </div>
+            </div>
+            <a href="Pagine/EsercizioJS1/index.html"><button>Visita</button></a>
+          </div>
+
+          <div class="contenitoreEsercizio">
+            <h4 class="titoloEsercizio">Paragrafi a scomparsa</h4>
+            <hr class="linea">
+            <div class="dropdown">
+              <button class="btn pulse">Descrizione</button>
+                <div class="dropdown-content">
+                  <p>Pagina HTML + CSS + JS che introduce i paragrafi a scomparsa gestiti con efventi legati al click del mouse.</p>
+                </div>
+            </div>
+            <a href="Pagine/paragrafiAScomparsa/index.html"><button>Visita</button></a>
+          </div>
+
+          <div class="contenitoreEsercizio">
+            <h4 class="titoloEsercizio">Esempi Input</h4>
+            <hr class="linea">
+            <div class="dropdown">
+              <button class="btn pulse">Descrizione</button>
+                <div class="dropdown-content">
+                  <p>Pagina con all'interno diversi tipi di input.</p>
+                </div>
+            </div>
+            <a href="Pagine/EsempiInput/index.html"><button>Visita</button></a>
+          </div>
+          
+          <div class="contenitoreEsercizio">
+            <h4 class="titoloEsercizio">Registrazione</h4>
+            <hr class="linea">
+            <div class="dropdown">
+              <button class="btn pulse">Descrizione</button>
+                <div class="dropdown-content">
+                  <p>Prototipo di pagina di registrazione con diversi tipi di input ad una piattaforma.</p>
+                </div>
+            </div>
+            <a href="Pagine/Registrazione/index.html"><button>Visita</button></a>
+          </div>
+
+
+          <!-- Tutti gli altri progetti... -->
+        </div>
+      </a>
+
+      <a name="Contatti">
+        <div class="titoloPagina">
+          <img src="/Images/email.png" alt="Telephone" width="50" height="50">
+          <h1>Contatti</h1>
+        </div>
+
+        <div class="contenutoPagina">
+          <ul>
+              <li><h3 class="sottotitolo">GitHub:</h3></li>
+              <p><a href="https://github.com/MeneghiniDavide" class="link">GitHub</a></p>
+              <li><h3 class="sottotitolo">LinkedIn:</h3></li>
+              <p><a href="#" class="link">LinkedIn</a></p>
+              <li><h3 class="sottotitolo">Mail:</h3></li>
+              <p class="link">davidemeneghini3@gmail.com</p>
+          </ul>
+        </div>
+      </a>
+      
+      <a name="FAQ">
+        <div class="titoloPagina">
+          <img src="/Images/information-button.png" alt="Telephone" width="50" height="50">
+          <h1>FAQ</h1>
+        </div>
+
+        <div class="contenutoPagina">
+            <ul>
+                <li><h3 class="sottotitolo">Cos'è questo sito? E a cosa serve?</h3></li>
+                <p>Questo sito ha la funzione di contenere tutti i miei progetti in modo da rendere più semplice e compatta la loro visualizzazione e consultazione.</p>
+                <li><h3 class="sottotitolo">Com'è organizzato questo sito?</h3></li>
+                <p>Questo sito è formato da una pagina "home" che accoglie i visitatori, una pagina che mi presenta, una pagina che spiega le mie competenze in ambito informatico, una pagina che continene tutti i miei progetti, una pagina che contiene i miei contatti e questa pagina per le FAQ.</p>
+                <li><h3 class="sottotitolo">In che linguaggi è programmato questo sito?</h3></li>
+                <p>Questo sito è stato programmato interamente con HTML, CSS e JavaScript. (wow)</p>
+                <li><h3 class="sottotitolo">Cosa succede se un progetto richiede competenze che non ho ancora?</h3></li>
+                <p>Essendo in costante formazione, ho una curva di apprendimento molto rapida. Se un compito esula dalle mie attuali competenze, lo dichiaro subito o mi impegno a studiare la soluzione specifica in tempi brevi.</p>
+                <li><h3 class="sottotitolo">I lavori nel portfolio sono progetti reali o accademici?</h3></li>
+                <p>Troverai un mix di entrambi. I progetti accademici dimostrano la mia padronanza tecnica e teorica, mentre i lavori extrascolari mostrano come applico queste basi a contesti di business reali.</p>
+                <li><h3 class="sottotitolo">Perché dovresti scegliere uno studente invece di un senior?</h3></li>
+                <p>Offro un approccio aggiornato alle ultime tecnologie/tendenze e una grande energia. Inoltre, essendo all'inizio della carriera, dedico una cura estrema a ogni singolo progetto per costruire la mia reputazione.</p>
+                <li><h3 class="sottotitolo">Quali strumenti software utilizzo quotidianamente?</h3></li>
+                <p>Per i miei progetti utilizzo principalmente Visual Studio Code e Microsoft Visual Studio. Sono comunque aperto a utilizzare altri tool.</p>
+              </ul>
+          
+        </div>
+      </a>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Davide Meneghini — Portfolio</p>
+      <p>Tutti i diritti sono riservati - Riproduzione vietata</p>
+    </footer>
+  </body>
+
+  <script>
+    //script per la barra di navigazione che scompare e compare in base allo scroll----------------------------------------------
+    let lastScrollY = window.scrollY;
+    const navbar = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > lastScrollY) {
+        // Se scendo, aggiungo la classe per nascondere
+        navbar.classList.add('nav-hidden');
+      } else {
+        // Se salgo, rimuovo la classe per mostrare
+        navbar.classList.remove('nav-hidden');
+      }
+      lastScrollY = window.scrollY;
+    });
+
+    //script per la barra di ricerca dei progetti--------------------------------------------------------------------------------------
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchInput = document.querySelector('.search-input');
+      const searchButton = document.querySelector('.search-button');
+      const progetti = document.querySelectorAll('.contenitoreEsercizio');
+
+      function filtraProgetti() {
+        const testoCercato = searchInput.value.toLowerCase();
+
+        progetti.forEach(progetto => {
+          // Troviamo il titolo dentro questo specifico progetto
+          const titolo = progetto.querySelector('.titoloEsercizio').textContent.toLowerCase();
+
+          if (titolo.includes(testoCercato)) {
+            // Se il titolo contiene il testo, mostra il progetto
+            progetto.style.display = "block"; 
+            // Usiamo block o flex in base al tuo layout originale
+          } else {
+            // Altrimenti nascondilo
+            progetto.style.display = "none";
+          }
+        });
+      }
+
+      // Cerca mentre l'utente scrive (molto comodo)
+      searchInput.addEventListener('input', filtraProgetti);
+
+      // Cerca quando l'utente clicca il tasto "Cerca"
+      searchButton.addEventListener('click', filtraProgetti);
+    });
+
+  </script>
 </html>
 
 

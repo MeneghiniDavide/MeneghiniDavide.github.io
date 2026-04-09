@@ -2,59 +2,84 @@
 <html>
 <style>
         .navbar {
-            font-family: 'IBM Plex Mono', monospace;
-            background-color: rgb(195, 56, 64);
-            background-color: rgb(103, 148, 153);
-            position:fixed;
+            background-color: rgb(171, 200, 162);
+            position: fixed;
             top: 0;
             width: 100%;
-            height: auto;
             left: 0;
             z-index: 1000;
-            margin-bottom: 0px;
+            text-align: center;
+
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .nav-hidden {
+            transform: translateY(-100%);
         }
 
         .navbar ul {
             list-style-type: none;
             margin: 0;
-            margin-left: 33%;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         .navbar li {
-            float: left;
+            display: inline-block;
         }
 
         .navbar li a {
             display: block;
-            color: rgb(50, 50, 50);
+            color: rgb(26, 36, 23);     
             text-align: center;
             padding: 0 20px;
             line-height: 60px;
             text-decoration: none;
+            position: relative;
+        }
+
+        .navbar li a::after {
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            left: 20px;
+            right: 20px;
+            height: 3px;
+            background-color: rgb(26, 36, 23);
+            transform: scaleX(0); /* Larchezza iniziale della linea */
+            transition: transform 0.3s ease;
+            transform-origin: center; /* Posizione dell'animazione */
         }
 
         .navbar li a:hover {
-            background-color: rgb(195, 56, 64);
-            background-color: rgb(103, 148, 153);
-            color: rgb(100, 100, 100);
+            color: rgb(26, 36, 23);
+        }
+
+        .navbar li a:hover::after {
+            transform: scaleX(1);
         }
 
         #titolo{
             margin-top: 60px;
         }
+
+        body { 
+            font-family: 'IBM Plex Mono', monospace;
+        }
     </style>
 <head>
     <nav class="navbar">
-                <ul>
-                    <li><a href="/index.html" class="nav-link">Home</a></li>
-                    <li><a href="/PagineHome/ChiSono.html" class="nav-link">Chi sono</a></li>
-                    <li><a href="/PagineHome/Competenze.html" class="nav-link">Competenze</a></li>
-                    <li><a href="/PagineHome/Progetti.html" class="nav-link">Progetti</a></li>
-                    <li><a href="/PagineHome/Contatti.html" class="nav-link">Contatti</a></li>
-                    <li><a href="/PagineHome/Faq.html" class="nav-link">FAQ</a></li>
-                </ul>
-            </nav>
+            <ul>
+                <li><a href="/index.html#Home" class="nav-link">Home</a></li>
+                <li><a href="/index.html#ChiSono" class="nav-link">Chi sono</a></li>
+                <li><a href="/index.html#Competenze" class="nav-link">Competenze</a></li>
+                <li><a href="/index.html#Progetti" class="nav-link">Progetti</a></li>
+                <li><a href="/index.html#Contatti" class="nav-link">Contatti</a></li>
+                <li><a href="/index.html#FAQ" class="nav-link">FAQ</a></li>
+            </ul>
+        </nav>
     <title id="titolo">Esempi di funzioni JavaScript</title>
 
     <script>

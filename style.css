@@ -1,6 +1,9 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body { 
     font-family: 'IBM Plex Mono', monospace;
-    background-color: rgb(50, 50, 50);
     background-color: rgb(255, 246, 227);
     justify-content:center;
     display:flex;
@@ -15,103 +18,80 @@ body {
 
 header{
     width:100%;
-    padding-left: 5%;
-    padding-top: 15px;
-
-    display: flex;
-    align-items: center;
-    gap:10px;
-}
-
-.linea {
-    border: none;
-    height: 2px;
-    background-color: black;
-    margin-top:5px;
-}
-
-button{
-    border-radius: 8px;
-    border-style:solid;
-    border-width: 2px;
-    margin-left:20px;
-    margin-top: 0px;
-    width: 70px;
-    height: 50px;
-    background-color: rgb(244, 214, 117);
-    box-shadow: 2px 2px 0px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-weight: 700;
-}
-
-button:hover {
-    transform: translate(2px, 2px);
-    box-shadow: 0px 0px 0px;
 }
 
 .navbar {
-    background-color: rgb(195, 56, 64);
-    background-color: rgb(103, 148, 153);
-    position:fixed;
+    background-color: rgb(171, 200, 162);
+    position: fixed;
     top: 0;
     width: 100%;
-    height: auto;
     left: 0;
     z-index: 1000;
+    text-align: center;
+
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-hidden {
+    transform: translateY(-100%);
 }
 
 .navbar ul {
     list-style-type: none;
     margin: 0;
-    margin-left: 33%;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .navbar li {
-    float: left;
+    display: inline-block;
 }
 
 .navbar li a {
     display: block;
-    color: rgb(50, 50, 50);
+    color: rgb(26, 36, 23);     
     text-align: center;
     padding: 0 20px;
     line-height: 60px;
     text-decoration: none;
+    position: relative;
+}
+
+.navbar li a::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    right: 20px;
+    height: 3px;
+    background-color: rgb(26, 36, 23);
+    transform: scaleX(0); /* Larchezza iniziale della linea */
+    transition: transform 0.3s ease;
+    transform-origin: center; /* Posizione dell'animazione */
 }
 
 .navbar li a:hover {
-    background-color: rgb(195, 56, 64);
-    background-color: rgb(103, 148, 153);
-    color: rgb(100, 100, 100);
+    color: rgb(26, 36, 23);
 }
 
-.footer-principale {
-    width: 100%;    
-    background-color: rgb(195, 56, 64);
-    background-color: rgb(103, 148, 153);
-    color: rgb(50, 50, 50);
+.navbar li a:hover::after {
+    transform: scaleX(1);
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(171, 200, 162);
+    color: rgb(26, 36, 23);
     text-align: center;
-    padding: 2  0px 0;
     padding: 20px 0;
-    bottom:0;
-}
-
-.footer-link{
-    color:rgb(50, 50, 50);
-}
-
-.footer-link:hover{
-    color:rgb(100, 100, 100);
-}
-
-.immagineHome{
-    display: block;
+    margin-top: 150px;
 }
 
 .contenitoreScritte{
     margin-top: 100px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     flex: 1;
     display: flex;
     flex-direction:column;
@@ -119,36 +99,175 @@ button:hover {
     align-items: center;
 }
 
-.slider-container {
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    position: relative;
+.link{
+    color:rgb(195, 56, 64); 
 }
 
-.slider-wrapper {
+.link:hover{
+    color:rgb(214, 120, 125);
+}
+
+.titoloPagina, .contenutoPagina {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 1000px;
+    padding: 0;
+}
+
+.titoloPagina {
     display: flex;
-    width: 300%;
-    height: 100%;
-    animation: slideAnimation 22s infinite ease-in-out;
+    align-items: center;
+    gap: 15px;
+    margin-top: 5%;
+    margin-bottom: 20px;
 }
 
-.slider-wrapper img {
-    width: 100vw;
-    height: 400px;
-    object-fit: cover;
+.contenutoPagina {
+    height: auto;
 }
 
-@keyframes slideAnimation {
-    /* Resta sulla prima immagine per 10s (circa 45% di 22s) */
-    0%, 47% { transform: translateX(0); }
+.sottotitolo{
+    color: rgb(103, 148, 153);
+    font-size: large;
+}
+
+.contenitoreEsercizi{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1000px;
+    padding: 20px;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.contenitoreEsercizio{
+    width: 300px; 
+    height: 115px;
+    border-radius: 8px;
+    background-color: rgb(247, 194, 54);
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: 5px 5px 0px rgb(26, 36, 23);
+    border-color: rgb(26, 36, 23);
+    transition: opacity 0.3s ease;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.linea {
+    border: none;
+    height: 2px;
+    background-color: rgb(26, 36, 23);
+    margin-top:5px;
+}
+
+.titoloEsercizio{
+    margin-left:20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+button{
+    border-radius: 8px;
+    border-style:solid;
+    border-width: 2px;
+    margin-left:20px;
+    margin-top: 5px;
+    width: auto;
+    height: 40px;
+    background-color: rgb(244, 214, 117);
+    box-shadow: 2px 2px 0px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    color: rgb(26, 36, 23);
+    border-color: rgb(26, 36, 23);
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+button:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px 0px;
+}
+
+button:active {
+    transform: scale(0.95); 
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    width: 280px;
+    min-width: 100px;
+    box-shadow: 0 2px 5px rgb(26, 36, 23);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s;
+    pointer-events: none;
+    border-radius: 0.5rem;
+    padding-right: 10px;
+    padding-left: 10px;
+    z-index: 9999;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.dropdown-content a {
+    color: rgb(26, 36, 23);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+:root {
+    --bg-color: rgb(244, 214, 117);
+    --dark-color: rgb(26, 36, 23);
+    --transition: all 0.2s ease-in-out;
+}
+
+.search-container {
+    gap: 10px;
+    margin: 20px;
+}
+
+.search-input {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--dark-color);
     
-    /* Scivola verso sinistra (circa 1s) */
-    50% { transform: translateX(-100vw); }
+    padding: 0 15px;
+    height: 40px;
+    width: 300px;
+    min-width: 50px;
     
-    /* Resta sulla seconda immagine per 10s */
-    97% { transform: translateX(-100vw); }
-    
-    /* Torna rapidamente all'inizio (o alla copia della prima immagine) */
-    100% { transform: translateX(-200vw); }
+    background-color: white;
+    border: 2px solid var(--dark-color);
+    border-radius: 8px;
+    box-shadow: 4px 4px 0px var(--dark-color);
+    outline: none;
+    transition: var(--transition);
+}
+
+/* Animazione quando l'utente clicca sulla barra */
+.search-input:focus {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px var(--dark-color);
 }
