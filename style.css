@@ -90,7 +90,7 @@ footer {
 }
 
 .contenitoreScritte{
-    margin-top: 100px;
+    margin-top: 120px;
     margin-bottom: 100px;
     flex: 1;
     display: flex;
@@ -110,7 +110,7 @@ footer {
 .titoloPagina, .contenutoPagina {
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 95%;
     max-width: 1000px;
     padding: 0;
 }
@@ -135,7 +135,7 @@ footer {
 .contenitoreEsercizi{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     max-width: 1000px;
     padding: 20px;
     gap: 20px;
@@ -143,8 +143,10 @@ footer {
 }
 
 .contenitoreEsercizio{
-    width: 300px; 
-    height: 115px;
+    width: 100%; 
+    max-width: 300px;
+    height: auto;
+    min-height: 120px;
     border-radius: 8px;
     background-color: rgb(247, 194, 54);
     border-style: solid;
@@ -270,4 +272,68 @@ button:active {
 .search-input:focus {
     transform: translate(-2px, -2px);
     box-shadow: 6px 6px 0px var(--dark-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+/* --- TABLET --- */
+@media (max-width: 768px) {
+    .navbar li a {
+        padding: 0 10px;
+        font-size: 14px;
+        line-height: 50px;
+    }
+
+    .search-input {
+        width: 80%;
+    }
+
+    .immagineHome[width="60%"] { width: 80% !important; }
+    .immagineHome[width="40%"] { width: 60% !important; }
+}
+
+/* --- SMARTPHONE --- */
+@media (max-width: 480px) {
+    .navbar ul {
+        justify-content: space-around;
+    }
+
+    .navbar li a {
+        padding: 0 5px;
+        font-size: 12px;
+        line-height: 40px;
+    }
+
+    .titoloPagina {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .search-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .search-input {
+        width: 100%;
+        box-shadow: 2px 2px 0px var(--dark-color);
+    }
+
+    .dropdown-content {
+        width: 200px;
+        left: 50%;
+        transform: translateX(-50%) translateY(-10px);
+    }
+    
+    .dropdown:hover .dropdown-content {
+        transform: translateX(-50%) translateY(0);
+    }
 }
