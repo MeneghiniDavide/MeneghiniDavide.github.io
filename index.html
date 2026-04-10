@@ -21,6 +21,9 @@
             <li><a href="#Contatti" class="nav-link">Contatti</a></li>
             <li><a href="#FAQ" class="nav-link">FAQ</a></li>
         </ul>
+        <button id="theme-toggle" class="btn-toggle">
+          <span id="theme-icon">🌙</span>
+      </button>
       </nav>
     </header>
 
@@ -280,6 +283,36 @@
 
       // Cerca quando l'utente clicca il tasto "Cerca"
       searchButton.addEventListener('click', filtraProgetti);
+    });
+
+
+    //scrip per pulsante modalità colori
+    const btn = document.getElementById('theme-toggle');
+    const icon = document.getElementById('theme-icon');
+    const body = document.body;
+
+    // Controlla se l'utente aveva già salvato una preferenza
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme === 'dark') {
+      body.classList.add('dark-mode');
+      icon.textContent = '☀️'; // Cambia in sole se è già dark
+    }
+
+    btn.addEventListener('click', () => {
+      // Toggle della classe
+      body.classList.toggle('dark-mode');
+      
+      let theme = 'light';
+      
+      if (body.classList.contains('dark-mode')) {
+        theme = 'dark';
+        icon.textContent = '☀️'; // Icona sole per tornare a Light
+      } else {
+        icon.textContent = '🌙'; // Icona luna per tornare a Dark
+      }
+      
+      // Salva la scelta nel localStorage
+      localStorage.setItem('theme', theme);
     });
 
   </script>
