@@ -174,7 +174,16 @@ footer {
     border-radius: 8px;
     border-style: solid;
     border-width: 2px;
-    transition: opacity 0.3s ease;
+    transition: all 0.15s ease-in-out;
+}
+
+.contenitoreEsercizio:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 3px 3px 0px;
+}
+
+.contenitoreEsercizio:active {
+    transform: scale(0.95); 
 }
 
 .hidden {
