@@ -353,7 +353,7 @@ img {
     .navbar li a {
         padding: 0 10px;
         font-size: 14px;
-        line-height: 40px;
+        line-height: 45px;
     }
 
     .search-input {
@@ -364,28 +364,37 @@ img {
     .immagineHome[width="40%"] { width: 60% !important; }
 
     .btn-toggle {
-        position: relative;
-        transform: none;
-        margin: 10px auto;
+        position: relative !important; 
+        top: auto !important;
+        right: auto !important;
+        transform: none !important;
+
+        margin: 5px auto;
+        order: -1;
     }
     
     .navbar {
         flex-direction: column;
-        padding-bottom: 10px;
+        padding: 10px 0;
+        height: auto;
+    }
+
+    .navbar ul {
+        margin-bottom: 5px;
     }
 }
 
 /* --- SMARTPHONE --- */
 @media (max-width: 480px) {
     .navbar ul {
-        justify-content: space-around;
-        gap: 5px;
+        justify-content: center;
+        gap: 2px;
     }
 
     .navbar li a {
-        padding: 5px 8px;
+        padding: 0 5px;
         font-size: 12px;
-        line-height: normal;
+        line-height: 35px;
     }
 
     .titoloPagina {
@@ -419,11 +428,21 @@ img {
         position: static;
         transform: none;
         margin: 10px auto;
+
+        position: relative !important;
+        top: auto !important;
+        right: auto !important;
+        transform: none !important;
+        
+        order: -1;
+        width: 40px; 
+        height: 35px;
     }
     
     .navbar {
         flex-direction: column;
-        padding-bottom: 10px;
+        height: auto;
+        padding: 8px 0;
     }
 }
 
