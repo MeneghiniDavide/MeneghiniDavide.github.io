@@ -42,7 +42,7 @@ header{
     top: 0;
     width: 100%;
     left: 0;
-    z-index: 1000;
+    z-index: 9999;
     text-align: center;
 
     transition: transform 0.2s ease-in-out;
@@ -179,7 +179,9 @@ footer {
 
 .contenitoreEsercizio:hover {
     transform: translate(2px, 2px);
-    box-shadow: 3px 3px 0px;
+    box-shadow: 3px 3px 0px rgb(26, 36, 23);
+    z-index: 9999;
+    position: relative;
 }
 
 .contenitoreEsercizio:active {
@@ -238,9 +240,14 @@ p, li, h1, h3, h4 {
     color: var(--text-primary);
 }
 
+
 .dropdown {
     position: relative;
-    display: inline-block;
+    display: inline-block;   
+}
+
+.dropdown:hover {
+    z-index: 100;
 }
 
 .dropdown-content {
@@ -312,7 +319,7 @@ body.dark-mode {
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 500;
     font-size: 16px;
-    color: var(--text-primary);
+    color: rgb(26, 36, 23);
     
     padding: 0 15px;
     height: 40px;
@@ -346,7 +353,7 @@ img {
     .navbar li a {
         padding: 0 10px;
         font-size: 14px;
-        line-height: 50px;
+        line-height: 40px;
     }
 
     .search-input {
@@ -357,7 +364,7 @@ img {
     .immagineHome[width="40%"] { width: 60% !important; }
 
     .btn-toggle {
-        position: static;
+        position: relative;
         transform: none;
         margin: 10px auto;
     }
@@ -372,12 +379,13 @@ img {
 @media (max-width: 480px) {
     .navbar ul {
         justify-content: space-around;
+        gap: 5px;
     }
 
     .navbar li a {
-        padding: 0 5px;
+        padding: 5px 8px;
         font-size: 12px;
-        line-height: 40px;
+        line-height: normal;
     }
 
     .titoloPagina {
