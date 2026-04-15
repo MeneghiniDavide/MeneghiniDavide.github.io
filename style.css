@@ -236,6 +236,45 @@ button:active {
     transform: scale(0.95); 
 }
 
+.sezioneFAQ{
+    background-color: var(--bg-body);
+    color: var(--text-primary);
+    border-radius: 8px;
+    border-style:solid;
+    border-width: 2px;
+    box-shadow: 5px 5px 0px var(--dark-color);
+    border-color: var(--dark-color);
+    margin:20px;
+    transition: all 0.15s ease-in-out;
+}
+
+.sezioneFAQ:hover{
+    transform: translate(2px, 2px);
+    box-shadow: 3px 3px 0px rgb(26, 36, 23);
+}
+.titoloFAQ{
+    margin: 0px;
+    padding: 10px;
+    background-color: var(--bg-nav-footer);
+    color: var(--text-primary);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.titoloFAQ:hover{
+    background-color: gray;
+}
+.contenutoFAQ{
+    padding: 0 10px;
+    display: none;  
+}
+
+.contenutoFAQ.visible{
+    display: block;
+}
+
+
+
 p, li, h1, h3, h4 {
     color: var(--text-primary);
 }
