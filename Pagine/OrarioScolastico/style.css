@@ -1,17 +1,10 @@
-body{
-    background-color: rgb(233, 150, 91);
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-}
-
 .pagina{
-    background-color: bisque;
     padding: 20px;
     border-radius: 8px;
     margin: auto;
     flex: 1;
     margin-top:60px;
+    height: auto;
 }
 
 .titolo{
@@ -56,7 +49,6 @@ caption{
 }
 
 a{
-    text-decoration: none;
     color:brown;
 }
 

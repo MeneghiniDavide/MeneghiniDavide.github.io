@@ -1,71 +1,11 @@
-<style>
-        .navbar {
-            background-color: rgb(171, 200, 162);
-            position: fixed;
-            top: 0;
-            width: 100%;
-            left: 0;
-            z-index: 1000;
-            text-align: center;
-
-            transition: transform 0.2s ease-in-out;
-        }
-
-        .nav-hidden {
-            transform: translateY(-100%);
-        }
-
-        .navbar ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .navbar li {
-            display: inline-block;
-        }
-
-        .navbar li a {
-            display: block;
-            color: rgb(26, 36, 23);     
-            text-align: center;
-            padding: 0 20px;
-            line-height: 60px;
-            text-decoration: none;
-            position: relative;
-        }
-
-        .navbar li a::after {
-            content: '';
-            position: absolute;
-            bottom: 5px;
-            left: 20px;
-            right: 20px;
-            height: 3px;
-            background-color: rgb(26, 36, 23);
-            transform: scaleX(0); /* Larchezza iniziale della linea */
-            transition: transform 0.3s ease;
-            transform-origin: center; /* Posizione dell'animazione */
-        }
-
-        .navbar li a:hover {
-            color: rgb(26, 36, 23);
-        }
-
-        .navbar li a:hover::after {
-            transform: scaleX(1);
-        }
-
-        body { 
-            font-family: 'IBM Plex Mono', monospace;
-        }
-    </style>
-
+<head>
+  <title>Mantova</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="Style.css">
+</head>
 <body>
-  <nav class="navbar">
+    <header>
+      <nav class="navbar">
             <ul>
                 <li><a href="/index.html#Home" class="nav-link">Home</a></li>
                 <li><a href="/index.html#ChiSono" class="nav-link">Chi sono</a></li>
@@ -74,10 +14,10 @@
                 <li><a href="/index.html#Contatti" class="nav-link">Contatti</a></li>
                 <li><a href="/index.html#FAQ" class="nav-link">FAQ</a></li>
             </ul>
-        </nav>
-    <header>
+      </nav>
+    </header>
+    <main>
       <h1>Mantova</h1>
-      <link rel="stylesheet" href="Style.css">
       <nav>
         <div class="sezioneURL">
             <ul>
@@ -88,8 +28,6 @@
             </ul>
         </div>
       </nav>
-    </header>
-    <main>
       <section id="storia">
         <h2>Storia di Mantova</h2>
         <!-- Questo paragrafo è adiacente a h2 -->
@@ -150,8 +88,9 @@
       </nav>
     </main>
     <footer>
-    <footer>
       <p>© 2026 - Scopri Mantova, la perla del Rinascimento</p>
+      <p>&copy; 2026 Davide Meneghini — Portfolio</p>
+      <p>Tutti i diritti sono riservati - Riproduzione vietata</p>
     </footer>
   </body>
   <script>

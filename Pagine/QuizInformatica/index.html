@@ -1,195 +1,113 @@
 <html>
     <head>
-        <nav class="navbar">
-            <ul>
-                <li><a href="/index.html#Home" class="nav-link">Home</a></li>
-                <li><a href="/index.html#ChiSono" class="nav-link">Chi sono</a></li>
-                <li><a href="/index.html#Competenze" class="nav-link">Competenze</a></li>
-                <li><a href="/index.html#Progetti" class="nav-link">Progetti</a></li>
-                <li><a href="/index.html#Contatti" class="nav-link">Contatti</a></li>
-                <li><a href="/index.html#FAQ" class="nav-link">FAQ</a></li>
-            </ul>
-        </nav>
+        <title>Quiz Informatica</title>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="style.css">
     </head>
-    
-    <style>
-        body{
-            margin-top: 150px;
-        }
-
-        .navbar {
-            background-color: rgb(171, 200, 162);
-            position: fixed;
-            top: 0;
-            width: 100%;
-            left: 0;
-            z-index: 1000;
-            text-align: center;
-
-            transition: transform 0.2s ease-in-out;
-        }
-
-        .nav-hidden {
-            transform: translateY(-100%);
-        }
-
-        .navbar ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .navbar li {
-            display: inline-block;
-        }
-
-        .navbar li a {
-            display: block;
-            color: rgb(26, 36, 23);     
-            text-align: center;
-            padding: 0 20px;
-            line-height: 60px;
-            text-decoration: none;
-            position: relative;
-        }
-
-        .navbar li a::after {
-            content: '';
-            position: absolute;
-            bottom: 5px;
-            left: 20px;
-            right: 20px;
-            height: 3px;
-            background-color: rgb(26, 36, 23);
-            transform: scaleX(0); /* Larchezza iniziale della linea */
-            transition: transform 0.3s ease;
-            transform-origin: center; /* Posizione dell'animazione */
-        }
-
-        .navbar li a:hover {
-            color: rgb(26, 36, 23);
-        }
-
-        .navbar li a:hover::after {
-            transform: scaleX(1);
-        }
-        body { 
-            font-family: 'IBM Plex Mono', monospace;
-            padding-left: 50px;
-        }
-
-        .filedsetDomande{
-            margin-top: 50px;
-            width: 60%;
-            padding: 30px;
-        }
-        
-        #pulsanti{
-            margin:20px;
-        }
-        .filedsetPunteggio{
-            width: 15%;
-            padding: 10px;
-        }
-
-        .filedsetCodice{
-            width: 23%;
-            padding: 10px;
-        }
-
-        .valorifinali{
-            display: flex;
-            flex-direction: row;
-            gap: 50px;
-        }
-    </style>
 
     <body>
-        <div>
-            <p><h3>Dati anagrafici</h3></p>
-            <label>Cognome: </label>
-            <input type="text" id="textBoxCognome">
-            <label>Nome: </label>
-            <input type="text" id="textBoxNome">
-            <h4>Data di nascita</h4>
-            <label>Giorno: </label>
-            <input type="text" id="textBoxGiorno">
-            <label>Mese: </label>
-            <select>
-                <option value="1">GEN</option>
-                <option value="2">FEB</option>
-                <option value="3">MAR</option>
-                <option value="1">APR</option>
-                <option value="2">MAG</option>
-                <option value="3">GIU</option>
-                <option value="1">LUG</option>
-                <option value="3">AGO</option>
-                <option value="2">SET</option>
-                <option value="3">OTT</option>
-                <option value="1">NOV</option>
-                <option value="2">DIC</option>
-            </select>
-            <label>Anno: </label>
-            <input type="text" id="textBoxAnno">
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/index.html#Home" class="nav-link">Home</a></li>
+                    <li><a href="/index.html#ChiSono" class="nav-link">Chi sono</a></li>
+                    <li><a href="/index.html#Competenze" class="nav-link">Competenze</a></li>
+                    <li><a href="/index.html#Progetti" class="nav-link">Progetti</a></li>
+                    <li><a href="/index.html#Contatti" class="nav-link">Contatti</a></li>
+                    <li><a href="/index.html#FAQ" class="nav-link">FAQ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <p><h3>Dati anagrafici</h3></p>
+                <label>Cognome: </label>
+                <input type="text" id="textBoxCognome">
+                <label>Nome: </label>
+                <input type="text" id="textBoxNome">
+                <h4>Data di nascita</h4>
+                <label>Giorno: </label>
+                <input type="text" id="textBoxGiorno">
+                <label>Mese: </label>
+                <select>
+                    <option value="1">GEN</option>
+                    <option value="2">FEB</option>
+                    <option value="3">MAR</option>
+                    <option value="1">APR</option>
+                    <option value="2">MAG</option>
+                    <option value="3">GIU</option>
+                    <option value="1">LUG</option>
+                    <option value="3">AGO</option>
+                    <option value="2">SET</option>
+                    <option value="3">OTT</option>
+                    <option value="1">NOV</option>
+                    <option value="2">DIC</option>
+                </select>
+                <label>Anno: </label>
+                <input type="text" id="textBoxAnno">
 
-            <fieldset class="filedsetDomande">
-                <div>
-                    <p>Qual'è il linguaggio di programmazione utilizzato per creare e modificare i datatbase? (in maiuscolo)</p>
-                    <input type="text" id="Risposta1">
+                <fieldset class="filedsetDomande">
+                    <div>
+                        <p>Qual'è il linguaggio di programmazione utilizzato per creare e modificare i datatbase? (in maiuscolo)</p>
+                        <input type="text" id="Risposta1">
+                    </div>
+                    <div>
+                        <p>Quanti valori può assumere una variabile booleana?</p>
+                        <select id="Risposta2">
+                            <option value="1">67</option>
+                            <option value="2">5</option>
+                            <option value="3">2</option>
+                            <option value="4">1</option>
+                            <option value="5">3</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>Quali sono le librerie caricate a run-time?</p>
+                        <input type="radio" id="Risposta3" name="risposta3" value="Statiche">
+                        <label>Statiche</label>
+                        <br>
+                        <input type="radio" id="Risposta3" name="risposta3" value="Dinamiche">
+                        <label>Dinamiche</label>
+                    </div>
+                    <div>
+                        <p>Quali tra queste sono parole chiave in C++?</p>
+                        <input type="checkbox" id="Risposta4" class="risposta4" value=1>
+                        <label>Char</label>
+                        <br>
+                        <input type="checkbox" id="Risposta4" class="risposta4" value=2>
+                        <label>Integer</label>
+                        <br>
+                        <input type="checkbox" id="Risposta4" class="risposta4" value=3>
+                        <label>Cout</label>
+                    </div>
+                    <div>
+                        <p>8 bit corrispondono a un...</p>
+                        <input type="text" id="Risposta5">
+                    </div>
+                </fieldset>
+                <div id="pulsanti">
+                    <button onclick="elaboraQuiz()" id="btnElabora">Elabora</button>
+                    <button onclick="cancellaQuiz()" id="btnCancella">Cancella</button>
                 </div>
-                <div>
-                    <p>Quanti valori può assumere una variabile booleana?</p>
-                    <select id="Risposta2">
-                        <option value="1">67</option>
-                        <option value="2">5</option>
-                        <option value="3">2</option>
-                        <option value="4">1</option>
-                        <option value="5">3</option>
-                    </select>
-                </div>
-                <div>
-                    <p>Quali sono le librerie caricate a run-time?</p>
-                    <input type="radio" id="Risposta3" name="risposta3" value="Statiche">
-                    <label>Statiche</label>
-                    <br>
-                    <input type="radio" id="Risposta3" name="risposta3" value="Dinamiche">
-                    <label>Dinamiche</label>
-                </div>
-                <div>
-                    <p>Quali tra queste sono parole chiave in C++?</p>
-                    <input type="checkbox" id="Risposta4" class="risposta4" value=1>
-                    <label>Char</label>
-                    <br>
-                    <input type="checkbox" id="Risposta4" class="risposta4" value=2>
-                    <label>Integer</label>
-                    <br>
-                    <input type="checkbox" id="Risposta4" class="risposta4" value=3>
-                    <label>Cout</label>
-                </div>
-                <div>
-                    <p>8 bit corrispondono a un...</p>
-                    <input type="text" id="Risposta5">
-                </div>
-            </fieldset>
-            <div id="pulsanti">
-                <button onclick="elaboraQuiz()" id="btnElabora">Elabora</button>
-                <button onclick="cancellaQuiz()" id="btnCancella">Cancella</button>
-            </div>
 
-            <div class="valorifinali">
-                <fieldset class="filedsetPunteggio">
-                    <label>Punteggio: </label>
-                    <input type="text" id="textBoxPunteggio">
-                </fieldset>
-                <fieldset class="filedsetCodice">
-                    <label>Utente con punteggio: </label>
-                    <input type="text" id="textBoxCodiceTest">
-                </fieldset>
+                <div class="valorifinali">
+                    <fieldset class="filedsetPunteggio">
+                        <label>Punteggio: </label>
+                        <input type="text" id="textBoxPunteggio">
+                    </fieldset>
+                    <fieldset class="filedsetCodice">
+                        <label>Utente con punteggio: </label>
+                        <input type="text" id="textBoxCodiceTest">
+                    </fieldset>
+                </div>
             </div>
-        </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2026 Davide Meneghini — Portfolio</p>
+            <p>Tutti i diritti sono riservati - Riproduzione vietata</p>
+        </footer>
+        
         <script src="script.js"></script>
     </body>
     <script>

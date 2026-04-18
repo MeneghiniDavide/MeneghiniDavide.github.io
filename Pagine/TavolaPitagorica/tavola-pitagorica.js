@@ -67,15 +67,20 @@ function creaTavolaPitagorica() {
 
 // Funzione per aggiungere la tabella alla pagina
 function mostraTavolaPitagorica() {
-    // Rimuovi eventuale tabella esistente
-    const existingTable = document.querySelector('table');
+    // Cerca il contenitore principale
+    const mainContainer = document.querySelector('main');
+    
+    // Rimuovi eventuale tabella esistente (se presente nel main)
+    const existingTable = mainContainer.querySelector('table');
     if (existingTable) {
         existingTable.remove();
     }
     
-    // Crea e aggiungi la nuova tabella
+    // Crea la nuova tabella
     const tavola = creaTavolaPitagorica();
-    document.body.appendChild(tavola);
+    
+    // Aggiungi la tabella al main
+    mainContainer.appendChild(tavola);
 }
 
 // Esegui quando il DOM è completamente caricato

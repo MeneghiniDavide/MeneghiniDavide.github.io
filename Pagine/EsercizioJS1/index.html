@@ -1,85 +1,6 @@
 <!DOCTYPE html>
 <html>
-<style>
-        .navbar {
-            background-color: rgb(171, 200, 162);
-            position: fixed;
-            top: 0;
-            width: 100%;
-            left: 0;
-            z-index: 1000;
-            text-align: center;
-
-            transition: transform 0.2s ease-in-out;
-        }
-
-        .nav-hidden {
-            transform: translateY(-100%);
-        }
-
-        .navbar ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .navbar li {
-            display: inline-block;
-        }
-
-        .navbar li a {
-            display: block;
-            color: rgb(26, 36, 23);     
-            text-align: center;
-            padding: 0 20px;
-            line-height: 60px;
-            text-decoration: none;
-            position: relative;
-        }
-
-        .navbar li a::after {
-            content: '';
-            position: absolute;
-            bottom: 5px;
-            left: 20px;
-            right: 20px;
-            height: 3px;
-            background-color: rgb(26, 36, 23);
-            transform: scaleX(0); /* Larchezza iniziale della linea */
-            transition: transform 0.3s ease;
-            transform-origin: center; /* Posizione dell'animazione */
-        }
-
-        .navbar li a:hover {
-            color: rgb(26, 36, 23);
-        }
-
-        .navbar li a:hover::after {
-            transform: scaleX(1);
-        }
-
-        #titolo{
-            margin-top: 60px;
-        }
-
-        body { 
-            font-family: 'IBM Plex Mono', monospace;
-        }
-    </style>
 <head>
-    <nav class="navbar">
-            <ul>
-                <li><a href="/index.html#Home" class="nav-link">Home</a></li>
-                <li><a href="/index.html#ChiSono" class="nav-link">Chi sono</a></li>
-                <li><a href="/index.html#Competenze" class="nav-link">Competenze</a></li>
-                <li><a href="/index.html#Progetti" class="nav-link">Progetti</a></li>
-                <li><a href="/index.html#Contatti" class="nav-link">Contatti</a></li>
-                <li><a href="/index.html#FAQ" class="nav-link">FAQ</a></li>
-            </ul>
-        </nav>
     <title id="titolo">Esempi di funzioni JavaScript</title>
 
     <script>
@@ -112,37 +33,52 @@
         }
 
     </script>
-
-    <style>
-        body {
-            background-color: rgb(70, 70, 70);
-        }
-    </style>
-
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/index.html#Home" class="nav-link">Home</a></li>
+                <li><a href="/index.html#ChiSono" class="nav-link">Chi sono</a></li>
+                <li><a href="/index.html#Competenze" class="nav-link">Competenze</a></li>
+                <li><a href="/index.html#Progetti" class="nav-link">Progetti</a></li>
+                <li><a href="/index.html#Contatti" class="nav-link">Contatti</a></li>
+                <li><a href="/index.html#FAQ" class="nav-link">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h2>What Can JavaScript Do?</h2>
+    <main>
+        <h2>What Can JavaScript Do?</h2>
 
-    <p id="demo">JavaScript can change HTML content.</p>
+        <p id="demo">JavaScript can change HTML content.</p>
 
-    <button type="button" onclick="cambiaTesto()">Cambia testo</button>
+        <button type="button" onclick="cambiaTesto()">Cambia testo</button>
 
-    <button type="button" id="CambiaTesto2">Cambia testo 2</button>
+        <button type="button" id="CambiaTesto2">Cambia testo 2</button>
 
-    <h2>What Can JavaScript Do?</h2>
+        <h2>What Can JavaScript Do?</h2>
 
-    <p>JavaScript can change HTML attribute values.</p>
+        <p>JavaScript can change HTML attribute values.</p>
 
-    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+        <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
 
-    <button type="button" onclick="accendiLuce()">Accendi lampadina</button>
+        <button type="button" onclick="accendiLuce()">Accendi lampadina</button>
 
-    <img id="myImage" src="/Pagine/EsercizioJS1/images/lampadinaSpenta.png" style="width:100px">
+        <img id="myImage" src="/Pagine/EsercizioJS1/images/lampadinaSpenta.png" style="width:100px">
 
-    <button type="button" onclick="spegniLuce()">Spegni lampadina</button>
+        <button type="button" onclick="spegniLuce()">Spegni lampadina</button>
+    </main>
+    
+    <br><br><br><br><br>
 
+    <footer>
+        <p>&copy; 2026 Davide Meneghini — Portfolio</p>
+        <p>Tutti i diritti sono riservati - Riproduzione vietata</p>
+    </footer>
 </body>
 <script>
         //script per la barra di navigazione che scompare e compare in base allo scroll----------------------------------------------

@@ -1,0 +1,28 @@
+body{
+    margin-top: 150px;
+}
+
+.filedsetDomande{
+    margin-top: 50px;
+    width: 60%;
+    padding: 30px;
+}
+
+#pulsanti{
+    margin:20px;
+}
+.filedsetPunteggio{
+    width: 15%;
+    padding: 10px;
+}
+
+.filedsetCodice{
+    width: 23%;
+    padding: 10px;
+}
+
+.valorifinali{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}

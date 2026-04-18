@@ -1,8 +1,3 @@
-body{
-    margin: 0;
-    padding: 20px;
-}
-
 .sezioneURL{
     background-color: rgb(138, 235, 83);
     margin: auto;
@@ -53,4 +48,12 @@ b:hover{
 }
 header{
     margin-top: 60px;
+}
+footer{
+    width: 100%;
+    bottom: 0px;
+    height: auto;
+}
+main{
+    padding: 20px;
 }

@@ -1,0 +1,12 @@
+#titolo{
+    margin-top: 60px;
+}
+
+body {
+    background-color: rgb(70, 70, 70);
+    display: block;
+}
+
+main{
+    padding: 50px;
+}

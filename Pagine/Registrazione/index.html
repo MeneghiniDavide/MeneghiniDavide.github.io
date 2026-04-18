@@ -1,136 +1,79 @@
 <html>
     <head>
-        <nav class="navbar">
-            <ul>
-                <li><a href="/index.html#Home" class="nav-link">Home</a></li>
-                <li><a href="/index.html#ChiSono" class="nav-link">Chi sono</a></li>
-                <li><a href="/index.html#Competenze" class="nav-link">Competenze</a></li>
-                <li><a href="/index.html#Progetti" class="nav-link">Progetti</a></li>
-                <li><a href="/index.html#Contatti" class="nav-link">Contatti</a></li>
-                <li><a href="/index.html#FAQ" class="nav-link">FAQ</a></li>
-            </ul>
-        </nav>
+        <title>Registrazione</title>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     
-    <style>
-        body{
-            margin-top: 150px;
-            text-align: center;
-        }
-
-        .navbar {
-            background-color: rgb(171, 200, 162);
-            position: fixed;
-            top: 0;
-            width: 100%;
-            left: 0;
-            z-index: 1000;
-            text-align: center;
-
-            transition: transform 0.2s ease-in-out;
-        }
-
-        .nav-hidden {
-            transform: translateY(-100%);
-        }
-
-        .navbar ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .navbar li {
-            display: inline-block;
-        }
-
-        .navbar li a {
-            display: block;
-            color: rgb(26, 36, 23);     
-            text-align: center;
-            padding: 0 20px;
-            line-height: 60px;
-            text-decoration: none;
-            position: relative;
-        }
-
-        .navbar li a::after {
-            content: '';
-            position: absolute;
-            bottom: 5px;
-            left: 20px;
-            right: 20px;
-            height: 3px;
-            background-color: rgb(26, 36, 23);
-            transform: scaleX(0); /* Larchezza iniziale della linea */
-            transition: transform 0.3s ease;
-            transform-origin: center; /* Posizione dell'animazione */
-        }
-
-        .navbar li a:hover {
-            color: rgb(26, 36, 23);
-        }
-
-        .navbar li a:hover::after {
-            transform: scaleX(1);
-        }
-        body { 
-            font-family: 'IBM Plex Mono', monospace;
-        }
-        
-    </style>
-
     <body>
-        <div>
-            <h2>REGISTRAZIONE UTENTE</h2>
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/index.html#Home" class="nav-link">Home</a></li>
+                    <li><a href="/index.html#ChiSono" class="nav-link">Chi sono</a></li>
+                    <li><a href="/index.html#Competenze" class="nav-link">Competenze</a></li>
+                    <li><a href="/index.html#Progetti" class="nav-link">Progetti</a></li>
+                    <li><a href="/index.html#Contatti" class="nav-link">Contatti</a></li>
+                    <li><a href="/index.html#FAQ" class="nav-link">FAQ</a></li>
+                </ul>
+            </nav>
+        </header>
 
+        <main>
             <div>
-                <label>Nome: </label>
-                <input type="text" id="textBoxNome">
-            </div>
-            <br>
-            <div>
-                <label>Cognome: </label>
-                <input type="text" id="textBoxCognome"> 
-            </div>
-            <br>
-            <div>
-                <label>Codice Fiscale: </label>
-                <input type="text" id="textBoxCF">
-            </div>
-            <br>
-            <div>
-                <input type="radio" id="uomo" name="sesso" value="uomo">
-                <label>Uomo</label>
+                <h2>REGISTRAZIONE UTENTE</h2>
+
+                <div>
+                    <label>Nome: </label>
+                    <input type="text" id="textBoxNome">
+                </div>
                 <br>
-                <input type="radio" id="donna" name="sesso" value="donna">
-                <label>Donna</label>
+                <div>
+                    <label>Cognome: </label>
+                    <input type="text" id="textBoxCognome"> 
+                </div>
+                <br>
+                <div>
+                    <label>Codice Fiscale: </label>
+                    <input type="text" id="textBoxCF">
+                </div>
+                <br>
+                <div>
+                    <input type="radio" id="uomo" name="sesso" value="uomo">
+                    <label>Uomo</label>
+                    <br>
+                    <input type="radio" id="donna" name="sesso" value="donna">
+                    <label>Donna</label>
+                </div>
+                <br>
+                <div>
+                    <select id="menu">
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <a href="/Pagine/Registrazione/terminiDiServizio.html" class="link">Termini di servizio</a>
+                </div>
+                <br>
+                <div>
+                    <button onclick="permettiRegistrazione()" id="btnAccetto">Accetto</button>
+                    <button onclick="nonPremettereRegistrazione()" id="btnNonAccetto">Non accetto</button>
+                </div>
+                <br>
+                <div>
+                    <button onclick="stampaStringaFinale()" id="btnRegistrati"><h4>REGISTRATI</h4></button>
+                </div>
             </div>
-            <br>
-            <div>
-                <select id="menu">
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
-                </select>
-            </div>
-            <br>
-            <div>
-                <a href="/Pagine/Registrazione/terminiDiServizio.html" class="link">Termini di servizio</a>
-            </div>
-            <br>
-            <div>
-                <button onclick="permettiRegistrazione()" id="btnAccetto">Accetto</button>
-                <button onclick="nonPremettereRegistrazione()" id="btnNonAccetto">Non accetto</button>
-            </div>
-            <br>
-            <div>
-                <button onclick="stampaStringaFinale()" id="btnRegistrati"><h4>REGISTRATI</h4></button>
-            </div>
-        </div>
+        </main>
+        <br><br><br><br><br>
+        <footer>
+            <p>&copy; 2026 Davide Meneghini — Portfolio</p>
+            <p>Tutti i diritti sono riservati - Riproduzione vietata</p>
+        </footer>
+
         <script src="script.js"></script>
     </body>
     <script>

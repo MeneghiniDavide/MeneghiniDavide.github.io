@@ -6,9 +6,6 @@ p, li, h1, h3, h4 {
     color: var(--text-primary);
 }
 
-
-
-
 body {
     transition: background-color 0.3s ease, color 0.3s ease;
 
@@ -175,17 +172,19 @@ footer {
     border-style: solid;
     border-width: 2px;
     transition: all 0.15s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenitoreEsercizio p {
+    flex-grow: 1;
 }
 
 .contenitoreEsercizio:hover {
     transform: translate(2px, 2px);
     box-shadow: 3px 3px 0px rgb(26, 36, 23);
-    z-index: 9999;
+    z-index: 999;
     position: relative;
-}
-
-.contenitoreEsercizio:active {
-    transform: scale(0.95); 
 }
 
 .hidden {
@@ -197,6 +196,8 @@ footer {
     height: 2px;
     background-color: rgb(26, 36, 23);
     margin-top:5px;
+    margin-bottom: 10px;
+    width: 100%;
 }
 
 .titoloEsercizio{
@@ -208,6 +209,12 @@ footer {
     color: rgb(26, 36, 23);
 }
 
+.descrizioneEsercizio{
+    color: rgb(26, 36, 23);
+    padding:0px 20px;
+    font-size: 15px;
+}
+
 button{
     background-color: var(--btn-bg);
     color: var(--dark-color);
@@ -217,7 +224,7 @@ button{
     border-style:solid;
     border-width: 2px;
     margin-left:20px;
-    margin-top: 5px;
+    margin-bottom: 20px;
     width: auto;
     height: 40px;
     box-shadow: 2px 2px 0px;
@@ -225,6 +232,8 @@ button{
     font-weight: 700;
     cursor: pointer;
     transition: all 0.15s ease-in-out;
+    align-self: flex-start; 
+    margin-top: auto;
 }
 
 button:hover {
@@ -261,9 +270,6 @@ button:active {
     cursor: pointer;
 }
 
-.titoloFAQ:hover{
-    background-color: gray;
-}
 .contenutoFAQ{
     padding: 0 10px;
     display: none;  
@@ -279,54 +285,13 @@ p, li, h1, h3, h4 {
     color: var(--text-primary);
 }
 
-
-.dropdown {
-    position: relative;
-    display: inline-block;   
-}
-
-.dropdown:hover {
-    z-index: 100;
-}
-
-.dropdown-content {
-    background-color: var(--bg-body);
-
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 280px;
-    min-width: 100px;
-    box-shadow: 0 2px 5px rgb(26, 36, 23);
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: all 0.3s;
-    pointer-events: none;
-    border-radius: 0.5rem;
-    padding-right: 10px;
-    padding-left: 10px;
-    z-index: 9999;
-}
-
-.dropdown:hover .dropdown-content {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-}
-
-.dropdown-content a {
-    color: rgb(26, 36, 23);
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    display: block;
-}
-
 :root {
     --bg-color: rgb(244, 214, 117);
     --dark-color: rgb(26, 36, 23);
     --transition: all 0.2s ease-in-out;
     --bg-body: rgb(255, 246, 227);       
     --bg-nav-footer: rgb(171, 200, 162);
+    --bg-nav-footer-reverse: rgb(106, 150, 92);
     --text-primary: rgb(26, 36, 23);
     --accent-color: rgb(195, 56, 64);
     --card-bg: rgb(247, 194, 54);
@@ -340,6 +305,7 @@ p, li, h1, h3, h4 {
 body.dark-mode {
     --bg-body: rgb(50, 50, 50);
     --bg-nav-footer: rgb(106, 150, 92);
+    --bg-nav-footer-reverse: rgb(171, 200, 162);
     --text-primary: rgb(255, 246, 227);
     --card-bg: rgb(247, 194, 54);
     --card-shadow: rgb(26, 36, 23);
