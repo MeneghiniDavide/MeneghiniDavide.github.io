@@ -1,6 +1,6 @@
 body{
     margin-top: 150px;
-}
+}   
 
 .filedsetDomande{
     margin-top: 50px;
@@ -11,6 +11,7 @@ body{
 #pulsanti{
     margin:20px;
 }
+
 .filedsetPunteggio{
     width: 15%;
     padding: 10px;
