@@ -7,6 +7,7 @@ body{
     border-width: 1px;
     border-collapse: collapse;
     text-align: center;
+    padding: 0 10px;
 }
 
 #tabellaProdotti th{
@@ -18,4 +19,42 @@ body{
 
 #tabellaProdotti{
     border-collapse: collapse;
+}
+
+.cellaConInput{
+    padding:0 0 !important;
+}
+
+.cellaConPulsante{
+    text-align: right !important;
+    padding: 10px 10px !important;
+    height: auto;
+}
+
+#bottoneOrdine{
+    margin: 0;
+}
+
+#inputMouse{
+    border: none;
+    background-color: rgb(255, 246, 227);
+}
+
+#inputTastiera{
+    border: none;
+    background-color: rgb(255, 246, 227);
+}
+
+#inputStampante{
+    border: none;
+    background-color: rgb(255, 246, 227);
+}
+
+#inputScanner{
+    border: none;
+    background-color: rgb(255, 246, 227);
+}
+
+#bottoneFinale{
+    margin: 20px 0;
 }
