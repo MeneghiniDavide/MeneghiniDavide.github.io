@@ -39,10 +39,10 @@ function cambiaPrezzo4(){
 }
 
 function elaboraOrdine(){
-    let p1 = parseFloat(document.getElementById("costoTotaleMouse").value) || 0;
-    let p2 = parseFloat(document.getElementById("costoTotaleTastiera").value) || 0;
-    let p3 = parseFloat(document.getElementById("costoTotaleStampante").value) || 0;
-    let p4 = parseFloat(document.getElementById("costoTotaleScanner").value) || 0;
+    let p1 = parseFloat(document.getElementById("costoTotaleMouse").innerText) || 0;
+    let p2 = parseFloat(document.getElementById("costoTotaleTastiera").innerText) || 0;
+    let p3 = parseFloat(document.getElementById("costoTotaleStampante").innerText) || 0;
+    let p4 = parseFloat(document.getElementById("costoTotaleScanner").innerText) || 0;
     let prezzoTotale = p1+p2+p3+p4;
     document.getElementById("costoTotale").innerHTML = prezzoTotale;
 }

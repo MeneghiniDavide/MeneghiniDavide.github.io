@@ -25,11 +25,11 @@
                     <tr><th>Qta</th><th>Descrizione</th><th>Costo unitario</th><th>Totale</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td><input type="number" id="inputMouse" onchange="cambiaPrezzo1()"></td><td>mouse</td><td>16</td><td><label id="costoTotaleMouse">0</label></td></tr>
-                    <tr><td><input type="number" id="inputTastiera" onchange="cambiaPrezzo2()"></td><td>tastiera 105 tasti</td><td>25</td><td><label id="costoTotaleTastiera">0</label></td></tr>
-                    <tr><td><input type="number" id="inputStampante" onchange="cambiaPrezzo3()"></td><td>stampante deskjet colori</td><td>350</td><td><label id="costoTotaleStampante">0</label></td></tr>
-                    <tr><td><input type="number" id="inputScanner" onchange="cambiaPrezzo4()"></td><td>scanner A4 colori</td><td>200</td><td><label id="costoTotaleScanner">0</label></td></tr>
-                    <tr><td colspan="3"><button id="bottoneOrdine" onclick="elaboraOrdine()">Totale ordine</button></td><td><label id="costoTotale">0</label></td></tr>
+                    <tr><td><input type="number" id="inputMouse" onchange="cambiaPrezzo1()"></td><td>mouse</td><td>16</td><td id="costoTotaleMouse">0</td></tr>
+                    <tr><td><input type="number" id="inputTastiera" onchange="cambiaPrezzo2()"></td><td>tastiera 105 tasti</td><td>25</td><td id="costoTotaleTastiera">0</td></tr>  
+                    <tr><td><input type="number" id="inputStampante" onchange="cambiaPrezzo3()"></td><td>stampante deskjet colori</td><td>350</td><td id="costoTotaleStampante">0</td></tr>
+                    <tr><td><input type="number" id="inputScanner" onchange="cambiaPrezzo4()"></td><td>scanner A4 colori</td><td>200</td><td id="costoTotaleScanner">0</td></tr>
+                    <tr><td colspan="3"><button id="bottoneOrdine" onclick="elaboraOrdine()">Totale ordine</button></td><td id="costoTotale">0</td></tr>
                 </tbody>
             </table>
 
