@@ -1,0 +1,21 @@
+body{
+    margin-top: 150px;
+}   
+
+#tabellaProdotti td{
+    border-style: solid;
+    border-width: 1px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#tabellaProdotti th{
+    border-style: solid;
+    border-width: 1px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#tabellaProdotti{
+    border-collapse: collapse;
+}
