@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Verifica JavaScript</title>
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <style>
+        main{
+            margin-top: 150px;
+            flex:1;
+        }
+    </style>
+    <body onload="caricaCMB1()">
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/index.html#Home" class="nav-link">Home</a></li>
+                    <li><a href="/index.html#ChiSono" class="nav-link">Chi sono</a></li>
+                    <li><a href="/index.html#Competenze" class="nav-link">Competenze</a></li>
+                    <li><a href="/index.html#Progetti" class="nav-link">Progetti</a></li>
+                    <li><a href="/index.html#Contatti" class="nav-link">Contatti</a></li>
+                    <li><a href="/index.html#FAQ" class="nav-link">FAQ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Selezione città</h1>
+            <label>Partenza:</label>
+            <select id="cmbPartenze">
+            </select>
+            <label>Destinazione:</label>
+            <select id="cmbDestinazioni">
+            </select>
+            <br>
+            <br>
+            <button id="btn2" onclick="continua2()">Conferma</button>
+        </main>
+        
+        <footer>
+            <p>&copy; 2026 Davide Meneghini — Portfolio</p>
+            <p>Tutti i diritti sono riservati - Riproduzione vietata</p>
+        </footer>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
