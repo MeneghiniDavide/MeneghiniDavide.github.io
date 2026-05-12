@@ -1,0 +1,31 @@
+main{
+  flex:1;
+  margin-top: 60px;
+}
+
+.input {
+    background-color:rgb(255, 246, 227);
+    
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(26, 36, 23);
+    
+    padding: 0 10px;
+    height: 30px;
+    width: 220px;
+    min-width: 50px;
+    
+    border-style: solid;
+    border-width: 2px;
+    border-color:rgb(26, 36, 23);
+    border-radius: 8px;
+    box-shadow: 2px 2px 0px rgb(26, 36, 23);
+    outline: none;
+    transition: var(--transition);
+}
+
+.input:focus {
+    transform: translate(-2 px, -2px);
+    box-shadow: 4px 4px 0px var(--dark-color);
+}

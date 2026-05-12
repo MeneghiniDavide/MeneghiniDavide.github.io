@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caccia al Tesoro</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="stile.css">
+</head>
+<body onload="caricaPaginaFinale()">
+    <header>
+        <nav class="navbar">
+        <ul>
+            <li><a href="/index.html#Home" class="nav-link">Home</a></li>
+            <li><a href="/index.html#ChiSono" class="nav-link">Chi sono</a></li>
+            <li><a href="/index.html#Competenze" class="nav-link">Competenze</a></li>
+            <li><a href="/index.html#Progetti" class="nav-link">Progetti</a></li>
+            <li><a href="/index.html#Contatti" class="nav-link">Contatti</a></li>
+            <li><a href="/index.html#FAQ" class="nav-link">FAQ</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="statistiche">
+        <h1>Caccia al Tesoro</h1>
+        <div id="pannello-stato">
+            <p>👤 Utente: <span id="nomeGiocatore"></span></p>
+            <p>✨ Punti: <span id="punteggio"></span></p>
+            <p>❤️ Vite: <span id="vite"></span></p>
+        </div>
+        </div>
+        
+        <h3>Missione Completata!</h3>
+        <p id="testoFinale"></p>
+        <ul>
+            <li><p id="punti"></p></li>
+            <li><p id="indizziTrovati"></p></li>
+            <li><p id="viteRimaste"></p></li>
+        </ul>
+        <button id="btnRicomicia" onclick="ricomincia()">Ricomincia</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Davide Meneghini — Portfolio</p>
+        <p>Tutti i diritti sono riservati - Riproduzione vietata</p>
+    </footer>
+
+
+
+    <script src="/Pagine/CacciaAlTesoro/gioco.js"></script>
+</body>
+</html>

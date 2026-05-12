@@ -187,34 +187,6 @@ footer {
     position: relative;
 }
 
-.contenitoreEsercizioVerifica{
-    background-color: var(--cardVerifica-bg);
-    box-shadow: 5px 5px 0px var(--card-shadow);
-    border-color: var(--card-border);
-
-    width: 100%; 
-    max-width: 300px;
-    height: auto;
-    min-height: 120px;
-    border-radius: 8px;
-    border-style: solid;
-    border-width: 2px;
-    transition: all 0.15s ease-in-out;
-    display: flex;
-    flex-direction: column;
-}
-
-.contenitoreEsercizioVerifica p {
-    flex-grow: 1;
-}
-
-.contenitoreEsercizioVerifica:hover {
-    transform: translate(2px, 2px);
-    box-shadow: 3px 3px 0px rgb(26, 36, 23);
-    z-index: 999;
-    position: relative;
-}
-
 .hidden {
     display: none !important;
 }
@@ -295,8 +267,8 @@ button:active {
 .titoloFAQ{
     margin: 0px;
     padding: 10px;
-    background-color: var(--bg-nav-footer);
-    color: var(--text-primary);
+    background-color: var(--card-bg);
+    color: black;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -326,7 +298,6 @@ p, li, h1, h3, h4 {
     --text-primary: rgb(26, 36, 23);
     --accent-color: rgb(195, 56, 64);
     --card-bg: rgb(247, 194, 54);
-    --cardVerifica-bg: rgb(236, 102, 109);
     --card-shadow: rgb(26, 36, 23);
     --card-border: rgb(26, 36, 23);
     --btn-bg: rgb(244, 214, 117);
@@ -340,7 +311,6 @@ body.dark-mode {
     --bg-nav-footer-reverse: rgb(171, 200, 162);
     --text-primary: rgb(255, 246, 227);
     --card-bg: rgb(247, 194, 54);
-    --cardVerifica-bg: rgb(236, 102, 109);
     --card-shadow: rgb(26, 36, 23);
     --card-border: rgb(26, 36, 23);
     --btn-bg: rgb(244, 214, 117);
